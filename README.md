@@ -3,7 +3,7 @@
 Website with forms, based on template.
 ## Technologies
 * HTML
-* CSS
+* SCSS
 * JavaScript
 ## Usage
 forms-website is available here: \
