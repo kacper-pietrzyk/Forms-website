@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Masteralb creative</title>
+  <meta name="author" content="Kacper Pietrzyk">
+  <meta name="description" content="Formularz logowania na stronie masteralb creative">
+  <meta name="keywords" content="formularz, rejrestracja, logowanie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/58ed338629.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <img class="header__logo" src="img/logo_header.png" alt="logo">
+    </header>
+    <main class="forms-wrapper">
+      <div class="form-wrapper form-wrapper--register">
+        <h2 class="form-wrapper__title">Register Form</h2>
+        <form class="form">
+          <div class="form__input-with-icon">
+            <input class="form__input" type="text" placeholder="Username">
+            <span class="fas fa-user"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input" type="password" placeholder="Password">
+            <span class="fas fa-lock"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input" type="password" placeholder="Confirm Password">
+            <span class="fas fa-lock"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input" type="email" placeholder="Email">
+            <span class="fas fa-envelope"></span>
+          </div>
+          <div class="form__select-with-icon">
+            <select class="form__select" name="location" required>
+              <option class="form__select--option" value="" selected disabled>Your Location</option>
+              <option class="form__select--option" value="Poland">Poland</option>
+              <option class="form__select--option" value="Spain">Spain</option>
+              <option class="form__select--option" value="Germany">Germany</option>
+            </select>
+            <span class="fas fa-map-marker-alt"></span>
+          </div>
+          <div class="form--flex-row">
+            <input id="terms" class="form__checkbox" type="checkbox">
+            <span class="form__checkbox--custom"></span>
+            <label for="terms" class="form__checkbox-label">I have read and accept the terms of use.</label>
+          </div>
+          <button class="form__button form__button--sign-up">Sign up</button>
+        </form>
+      </div>
+      <div class="form-wrapper form-wrapper--sign-in">
+        <h2 class="form-wrapper__title">Sign In Form</h2>
+        <form class="form">
+          <div class="form__input-with-icon">
+            <input class="form__input" type="text" placeholder="Username">
+            <span class="fas fa-user"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input" type="password" placeholder="Password">
+            <span class="fas fa-lock"></span>
+          </div>
+          <div class="form--flex-row">
+            <input id="remember-me" class="form__checkbox" type="checkbox">
+            <span class="form__checkbox--custom"></span>
+            <label for="remember-me" class="form__checkbox-label">Remember me</label>
+            <button class="form__button">Sign in</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-wrapper form-wrapper--recover">
+        <h2 class="form-wrapper__title">Recover Form</h2>
+        <form class="form">
+          <div class="form__input-with-icon">
+            <input class="form__input form__input--recover-email" type="email" placeholder="Enter your Email">
+            <span class="fas fa-envelope"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input form__input--recover-phone-number" type="number"
+              placeholder="Enter your Phone number">
+            <span class="fas fa-mobile-alt"></span>
+          </div>
+          <div class="form--flex-row">
+            <button class="form__button form__button--small">Send</button>
+            <button disabled class="form__button form__button--small form__button--done">Done</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-wrapper form-wrapper--email">
+        <h2 class="form-wrapper__title">Send Email</h2>
+        <form class="form">
+          <div class="form__input-with-icon">
+            <input class="form__input" type="text" placeholder="Your Name">
+            <span class="fas fa-user"></span>
+          </div>
+          <div class="form__input-with-icon">
+            <input class="form__input" type="email" placeholder="Your Email">
+            <span class="fas fa-envelope"></span>
+          </div>
+          <textarea class="form__textarea" name="message" id="message" placeholder="Type your message..."></textarea>
+          <div class="form--flex-row">
+            <input id="send_copy" class="form__checkbox" type="checkbox">
+            <span class="form__checkbox--custom"></span>
+            <label for="send_copy" class="form__checkbox-label">Send a copy to my Email</label>
+          </div>
+          <button class="form__button form__button--email">Send Email</button>
+        </form>
+      </div>
+      <div class="form-wrapper form-wrapper--subscribe">
+        <h2 class="form-wrapper__title">Subscribe Form</h2>
+        <form class="form">
+          <div class="form__input-with-icon">
+            <input class="form__input" type="email" placeholder="Enter your Email">
+            <span class="fas fa-envelope"></span>
+          </div>
+          <div class="form--flex-row">
+            <button class="form__button form__button--small">Subscribe</button>
+            <button class="form__button form__button--red form__button--small">No, Thanks</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <img class="footer__logo" src="img/logo_bottom.png" alt="logo">
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
